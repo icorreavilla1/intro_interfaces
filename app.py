@@ -13,18 +13,25 @@ st.write("El texto escrito es: ", texto)
 col1, col2 = st.columns(2)
 
 with col1:
-  st.subheader("Esta es mi primera columna")
-  st.write("Las interfaces multimodales mejoran la experienci del usuario")
+  st.subheader("Bienvenido")
+  st.write("Pueden usar mis datos para fines investigativos")
   resp = st.checkbox("Estoy de acuerdo")
   if resp:
-    st.write("correctooo")
+    st.write("Gracias! puedes continuar")
 
 with col2:
-  st.subheader("Esta es mi primera columna")
-  modo = st.radio("Que modalidad es la principal en tu interfaz", ("Visual", "Auditiva", "Tactil"))
-  if modo == "Visual":
+  st.subheader("Cuentame, ¿Qué prefieres?")
+  modo = st.radio("Escoge una de las opciones", ("Comida Mexicana", "Comida Italiana", "Comida Colombiana"))
+  if modo == "Comida Mexicana":
     st.write("La vista es fundamental para tu interfaz")
-  if modo == "Auditiva":
+  if modo == "Comida Italiana":
     st.write("La audicion es fundamental para tu interfaz")
-  if modo == "Tactil":
+  if modo == "Comida Colombiana":
     st.write("El tacto es fundamental")
+
+st.subheader("Uso de botones")
+if st.button ("Presiona el boton"):
+  st.write("Gracias por precionar")
+else:
+  st.write("No has precionado aún")
+  
