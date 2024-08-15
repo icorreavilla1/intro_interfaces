@@ -23,11 +23,11 @@ with col2:
   st.subheader("Cuentame, ¿Qué prefieres?")
   modo = st.radio("Escoge una de las opciones", ("Comida Mexicana", "Comida Italiana", "Comida Colombiana"))
   if modo == "Comida Mexicana":
-    st.write("La vista es fundamental para tu interfaz")
+    st.write("Los tacos son deliciosos!")
   if modo == "Comida Italiana":
-    st.write("La audicion es fundamental para tu interfaz")
+    st.write("Mmmmm me encanta la pasta carbonara")
   if modo == "Comida Colombiana":
-    st.write("El tacto es fundamental")
+    st.write("Una bandeja paisa con mucho chicharrón por favor!")
 
 st.subheader("Uso de botones")
 if st.button ("Presiona el boton"):
